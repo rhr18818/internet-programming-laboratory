@@ -68,4 +68,4 @@ The CGPA calculator is a web application that allows users to dynamically input 
 *   Implement more advanced CGPA calculations (e.g., different grading systems).
 
 ## Contact
-[ratul.hasan.infi.bd@gmail.com]
+<a href="mailto:ratul.hasan.infi.bd@gmail.com">✉️ ratul.hasan.infi.bd@gmail.com</a>

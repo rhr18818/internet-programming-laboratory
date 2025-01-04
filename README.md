@@ -12,21 +12,21 @@ The repository includes three distinct projects, each progressively building upo
     *   This project provides a user-friendly interface for calculating a Cumulative Grade Point Average (CGPA). It allows users to dynamically add and remove course inputs, specifying grades and credit hours for each.
     *   **Key Features:**  Dynamic form manipulation using JavaScript, CGPA calculation logic implemented in PHP, user-centric design.
     *   **Technologies:** HTML, CSS, JavaScript, and PHP.
-    *   **Detailed Documentation:** [README-cgpa-calculator.md](./cgpa/readme.md)
+    *   **Detailed Documentation:** [Dynamic CGPA Calculator Project](./cgpa/readme.md)
     *   **Focus:** Front-end interactivity and back-end data processing.
 
 2.  **Basic Client-Side Registration Form:**
     *   This project is a fundamental example of a form-based web application. It collects user input and displays the submitted data on the same page using JavaScript.
     *   **Key Features:** Form input handling, real-time data display via JavaScript, foundational front-end design.
     *   **Technologies:** HTML, CSS, and JavaScript.
-     *   **Location:** Main repository folder.
+    *   **Detailed Documentation:** [Single Page Registration Form Project](./registration-1page/readme.md)
     *   **Focus:** Understanding form elements and client-side data management.
 
 3.  **Database-Integrated Student Registration Form:**
     *   This project demonstrates a complete web application with database interaction. It handles user registration, including data validation and storage in a MySQL database.
     *   **Key Features:** Form submission, back-end data processing in PHP, database interaction using MySQL, duplicate entry detection.
     *   **Technologies:** HTML, CSS, PHP, and MySQL.
-     *  **Location:** Main repository folder.
+    *   **Detailed Documentation:** [Registration Form Project](./registration/readme.md)
     *   **Focus:** Server-side data management, database integration, and secure data handling.
 
 ## Core Learning Outcomes

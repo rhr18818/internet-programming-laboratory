@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registraion Form</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            height: 100vh;
+            overflow: hidden;    
+        }
+        .registration{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px, black,solid;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            width: 400px;
+        }
+        .registration :has(#submited_data){
+            border: 1px, green,solid;
+        }
+        .registration h2{
+            margin: 20px;
+        }
+        label{
+            margin: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        input{
+            margin: 10px;
+            padding: 5px;
+            font-weight: semi-bold;
+            
+        }
+        input:nth-of-type(1),input:nth-of-type(2),input:nth-of-type(3){
+            width: 250px;
+        }
+        input[type="submit"]{
+            width: 150px;
+            font-size: 16px;
+            background-color: lightgreen;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            
+            
+        }
+        .submit_btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        select{
+            margin: 10px;
+            padding: 5px;
+            font-weight: semi-bold;
+            width: 250px;
+        }
+        p{
+            font-size: 18px;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration">
+        <h2>Registration Form</h2>
+        <form autocomplete="on">
+            <label for="input_name">Name</label>
+            <input type="text" name="input_name" id="input_name">
+            <br>
+            <label for="input_email">Email</label>
+            <input type="email" name="input_email" id="input_email">
+            <br>
+            <label for="input_phone">Phone</label>
+            <input type="number" name="input_phone" id="input_phone">
+            <br>
+            <label for="gender_select">Select Gender</label>
+            <input type="radio" name="gender_select" id="gender_male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender_select" id="gender_female" value="female">
+            <label for="male">Female</label>
+            <br>
+            <label for="select_city">Select City</label>
+            <select name="select_city" id="select_city">
+                <option value="dhaka" selected>Dhaka</option>
+                <option value="chittagong">Chittagong</option>
+                <option value="khulna">Khulna</option>
+                <option value="rajshahi">Rajshahi</option>
+                <option value="sylhet">Sylhet</option>
+                <option value="barisal">Barisal</option>
+                <option value="rangpur">Rangpur</option>
+                <option value="mymensingh">Mymensingh</option>
+            </select>
+            <br>
+            <div class="submit_btn">
+                <input type="submit" value="Register" >
+            </div>
+
+        </form>
+    </div>
+    <div class="registration" >
+        <h2>-Submited Data-</h2>
+        <div id="submited_data">
+            
+
+        </div>
+    </div>
+    <script>
+            
+
+            const submit_btn = document.querySelector('input[type="submit"]'); 
+            submit_btn.addEventListener('click',submit_data);
+
+            const submit =  document.getElementById('submited_data')
+
+            function submit_data(){
+                event.preventDefault();
+                
+
+                const name = document.querySelector('#input_name').value;
+                const email = document.querySelector('#input_email').value;
+                const phone = document.querySelector('#input_phone').value;
+                let gender;
+                const selectedRadio = document.querySelector('input[name="gender_select"]:checked');
+                    if (selectedRadio) {
+                        gender = selectedRadio.value;
+                    } else {
+                        gender = 'Not selected';
+                    }
+                const city = document.querySelector('#select_city').value;
+
+            submit.innerHTML = 
+                `   
+                   
+                    <p> Name : ${name}</p>
+                    <p style="text-transform: none!important;">Email : ${email}</p>
+                    <p>Phone : ${phone}</p>
+                    <p>Gender : ${gender}</p>
+                    <p>City : ${city}</p>
+            
+                `;
+            }
+
+
+    </script>
+    
+</body>
+</html>

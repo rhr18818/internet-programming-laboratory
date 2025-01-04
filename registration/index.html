@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        form {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        body h2 {
+            margin: 20px;
+        }
+        input {
+            margin: 10px;
+            padding: 5px;
+            width: 200px;
+        }
+        input[type="submit"] {
+            background-color: lightgreen;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Registration</h2>
+    <!-- Changed action to save_data.php -->
+    <form action="save_data.php" method="POST">
+        Name: <br>
+        <input type="text" name="name" required><br>
+        
+        Email: <br>
+        <input type="email" name="email" required><br>
+        
+        Phone: <br>
+        <input type="tel" name="phone"><br>
+        
+        Gender: <br>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br>
+        
+        City: <br>
+        <input type="text" name="city"><br>
+        
+        <input type="submit" value="Register Now!">
+    </form>
+</body>
+</html>

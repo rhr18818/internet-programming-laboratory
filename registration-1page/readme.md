@@ -1,4 +1,4 @@
-# Detailed README: Registration Form Project
+# Detailed README: Single Page Registration Form Project
 
 This README provides an in-depth look at the registration form project, a web application designed to collect user information. This project was developed as part of my Internet Programming Laboratory course.
 

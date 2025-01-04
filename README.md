@@ -12,7 +12,7 @@ The repository includes three distinct projects, each progressively building upo
     *   This project provides a user-friendly interface for calculating a Cumulative Grade Point Average (CGPA). It allows users to dynamically add and remove course inputs, specifying grades and credit hours for each.
     *   **Key Features:**  Dynamic form manipulation using JavaScript, CGPA calculation logic implemented in PHP, user-centric design.
     *   **Technologies:** HTML, CSS, JavaScript, and PHP.
-    *   **Detailed Documentation:** [README-cgpa-calculator.md](./README-cgpa-calculator.md)
+    *   **Detailed Documentation:** [README-cgpa-calculator.md](./cgpa/readme.md)
     *   **Focus:** Front-end interactivity and back-end data processing.
 
 2.  **Basic Client-Side Registration Form:**

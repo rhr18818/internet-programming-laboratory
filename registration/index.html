@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regesitraion Form</title>
+    <title>Practise Regesitraion Form</title>
     <style>
         body{
             min-height: 100vh;
@@ -61,22 +61,22 @@
         <h2>Registration Form</h2>
         <form action="save_data.php" method="post" autocomplete="on">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name" required>
             <br>
             <label for="mail">Email</label>
-            <input type="email" name="mail" id="mail">
+            <input type="email" name="mail" id="mail" required>
             <br>
             <label for="phone">Phone</label>
-            <input type="number" name="phone" id="phone">
+            <input type="number" name="phone" id="phone" required>
             <br>
             <label for="gender">Gender</label>
-            <input type="radio" name="gender" id="male" value="Male">
+            <input type="radio" name="gender" id="male" value="Male" required>
             <label for="male">Male</label>
-            <input type="radio" name="gender" id="female" value="Female">
+            <input type="radio" name="gender" id="female" value="Female" required>
             <label for="female">Female</label>
             <br>
             <label for="location">Location</label>
-            <select name="location" id="location">
+            <select name="location" id="location" required>
                 <option value="Khulna">Khulna</option>
                 <option value="Dhaka" selected>Dhaka</option>
                 <option value="Jessore">Jessore</option>

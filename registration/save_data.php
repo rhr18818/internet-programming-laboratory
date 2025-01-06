@@ -52,7 +52,7 @@
 
             if ($result->num_rows > 0) {
                 // Email already exists!
-                echo "<h2 style='color: #b22222; margin: 20px'>Registration Failed!</h2>";
+                echo "<h2 style='color: #b22222; margin: 20px; display: flex; justify-content: center'>Registration Failed!</h2>";
                 echo "<div style='border: 2px solid #b22222; padding: 20px; margin: 20px; width: 300px; border-radius: 10px'>";
                 echo "This email and phone is already registered! Please use a different email and phone.";
                 echo "<br><br><a style='color: white;display: flex;justify-content: center' href='index.html'>Go Back to Registration</a>";
@@ -64,7 +64,7 @@
 
                 // Try to save the data
                 if ($conn->query($sql) === TRUE) {
-                    echo "<h3 style='color: #4ae14c; margin: 20px'>Registration Successful!</h3>";
+                    echo "<h3 style='color: #4ae14c; margin: 20px ;display: flex; justify-content: center' >Registration Successful!</h3>";
                     echo "<b>Name:</b> " . $name . "<br><br>";
                     echo "<b>Email:</b> " . $email . "<br><br>";
                     echo "<b>Phone:</b> " . $phone . "<br><br>";

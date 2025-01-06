@@ -1,51 +1,93 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Student Registration Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regesitraion Form</title>
     <style>
-        form {
-            width: 300px;
-            margin: 20px;
-            padding: 20px;
-            border: 1px solid black;
+        body{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .registration_form{
+            background: #4c4ae1;
+            color: white;
             border-radius: 10px;
+            height: auto;
+            margin: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
         }
-        body h2 {
+        .registration_form h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin: 20px;
         }
-        input {
-            margin: 10px;
-            padding: 5px;
-            width: 200px;
-        }
-        input[type="submit"] {
-            background-color: lightgreen;
-            border: none;
+        label,input{
             padding: 10px;
+        }
+        input{
+            margin: 10px;
+        }
+        input:nth-of-type(1),input:nth-of-type(2),input:nth-of-type(3){
+            width: 250px;
+        }
+        select{
+            width: 250px;
+            padding: 10px;
+            margin: 10px;
+        }
+        #submit_btn{
+            width: 100px;
+            border: none;
+            border-radius: 20px;
+            margin: 10px;
             cursor: pointer;
         }
+        #submit_btn:hover{
+            background: #010661;
+            color: white!important;
+        }
+
     </style>
 </head>
 <body>
-    <h2>Student Registration</h2>
-    <!-- Changed action to save_data.php -->
-    <form action="save_data.php" method="POST">
-        Name: <br>
-        <input type="text" name="name" required><br>
-        
-        Email: <br>
-        <input type="email" name="email" required><br>
-        
-        Phone: <br>
-        <input type="tel" name="phone"><br>
-        
-        Gender: <br>
-        <input type="radio" name="gender" value="male"> Male
-        <input type="radio" name="gender" value="female"> Female<br>
-        
-        City: <br>
-        <input type="text" name="city"><br>
-        
-        <input type="submit" value="Register Now!">
-    </form>
+    <div class="registration_form">
+        <h2>Registration Form</h2>
+        <form action="save_data.php" method="post" autocomplete="on">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="mail">Email</label>
+            <input type="email" name="mail" id="mail">
+            <br>
+            <label for="phone">Phone</label>
+            <input type="number" name="phone" id="phone">
+            <br>
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender" id="male" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="Female">
+            <label for="female">Female</label>
+            <br>
+            <label for="location">Location</label>
+            <select name="location" id="location">
+                <option value="Khulna">Khulna</option>
+                <option value="Dhaka" selected>Dhaka</option>
+                <option value="Jessore">Jessore</option>
+                <option value="Rajshahi">Rajshahi</option>
+            </select>
+            <br>
+            <input type="submit" value="Register" id="submit_btn">
+        </form>
+    </div>
+    
+
+    
 </body>
 </html>
